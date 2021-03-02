@@ -1,0 +1,101 @@
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f4f46;
+    --gray-detail:#dddddd;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation{
+    height: 4vw;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    color: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__area{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.navigation__area__logo-text{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0px;
+    margin-right: 3.5rem;
+}
+
+.navigation__menu{
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation__menu__item{
+    display: inline-block;
+}
+
+.navigation__menu__item__text{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+
+.navigation__button{
+    text-decoration: none;
+    color: var(--main-color);
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 6px 18px;
+    border-radius: 6%;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.carousel{
+    width: 100%;
+    height: 85vh;
+}
+
+.carousel__row{
+    width: inherit;
+    height: inherit;
+}
+
+.carousel__image1{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/salad.jpg');
+    background-size: cover;
+}
+
+.footer__nav{
+    height: 6.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav__menu{
+    list-style: none;
+}
+
+.footer__nav__menu__text{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px;
+    border-left: 1px solid var(--gray-detail);
+}
