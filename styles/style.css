@@ -4,6 +4,14 @@
     --gray-detail:#dddddd;
 }
 
+.hidden{
+    display: none;
+}
+
+.disapear{
+    opacity: 0;
+}
+
 *, *::after, *::before{
     box-sizing: border-box;
     margin: 0;
@@ -54,13 +62,13 @@ html{
     margin-left: 2rem;
 }
 
-.navigation__button{
+.button{
     text-decoration: none;
     color: var(--main-color);
     display: inline-block;
     background-color: var(--secondary-color);
     padding: 6px 18px;
-    border-radius: 6%;
+    border-radius: 6px;
     font-weight: bold;
     margin-right: 1rem;
 }
@@ -98,4 +106,60 @@ html{
     color: var(--secondary-color);
     padding: 10px;
     border-left: 1px solid var(--gray-detail);
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+.modal__area{
+    width: 50vw;
+    height: 43vh;
+    background-color: var(--main-color);
+    z-index: 100;
+    position: fixed;
+    top: 25%;
+    left:25%;
+    transform: translateY(-200%);
+    transition: all 1s ease-in-out;
+}
+
+.modal__area__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+}
+
+.modal__area__header{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+.modal__area__description{
+    color: #777777;
+}
+
+.modal__area__inputs{
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal__area__inputs__textbox{
+    border: 0px;
+    border-bottom: 2px solid var(--gray-detail);
+    font-size: 1.5rem;
+    width: 40%;
+    line-height: 50px;
+}
+
+.button--modal{
+    padding: 1rem 4.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }

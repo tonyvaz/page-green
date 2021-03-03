@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./scripts/script.js"></script>
     <title>Green Page</title>
 </head>
 <body>
+    <div class="modal">
     <nav class="navigation">
         <div class="navigation__area">
             <a class="navigation__area__logo-text" href="#">Green Page</a>
@@ -25,7 +27,7 @@
         </div>
 
        
-        <a class="navigation__button" href="">Order Now</a>
+        <a class="button" href="">Order Now</a>
     </nav>
     <div class="carousel">
         <div class="carousel__row">
@@ -59,5 +61,19 @@
 
     </footer> 
 
+    
+        
+</div>
+    <div class="modal__area">
+        <div class="modal__area__content">
+            <span class="modal__area__header">Never miss a beet</span>
+            <span class="modal__area__description">Sign up to receive sweetgreen's updates and </br> recommendations</span>
+            <div class="modal__area__inputs">
+                <input class="modal__area__inputs__textbox"  type="email" placeholder="Enter Email Address *">
+                <input class="modal__area__inputs__textbox" type="text" placeholder="Zip Code *">
+            </div>
+            <a class="button button--modal" href="">Sign Up</a>
+        </div>
+    </div>
 </body>
 </html>
