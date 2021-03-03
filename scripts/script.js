@@ -1,10 +1,10 @@
 const modal = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal__area');
-sessionStorage.setItem("modalOpen", true);
 
- if (sessionStorage.getItem("modalOpen") === "true") {
-     modalContent.style.transform = `translateY(0%)`;
-//   sessionStorage.setItem("modalOpen", false);
+
+ if (sessionStorage.getItem("modalOpen") === null) {
+    modalContent.style.transform = `translateY(0%)`;
+    sessionStorage.setItem("modalOpen", true);
  }
 
 
