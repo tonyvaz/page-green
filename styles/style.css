@@ -20,6 +20,7 @@
 
 html{
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 .navigation{
@@ -30,6 +31,7 @@ html{
     color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navigation__area{
@@ -162,4 +164,113 @@ html{
     padding: 1rem 4.5rem;
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+/*Menu page*/
+.hero {
+    width: 100vw;
+    height: 45vh;
+    background-size: cover;
+    background-position-y: 51% ;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content__region-links{
+    margin-top: 3rem;
+    color: var(--main-color);
+}
+
+.links__white{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero--menu-1{
+    background-image: url('../img/bowl.jpg');
+}
+
+.hero__content__headers{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero__content__text{
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.hero__content__text--bold{
+    font-weight: bold;
+}
+
+.section__menu{
+    width: 100%;
+     height: 50vh; 
+    margin-top: 3rem;
+}
+
+.section__menu__area{
+    width: 60%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.section__menu__area__grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.grid--3x3{
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: repeat(3,31%);
+}
+
+.grid--3x2{
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: repeat(2,48%);
+}
+
+.grid__item__header{
+    color: var(--secondary-color);
+    margin-bottom: .3rem;
+}
+
+.grid__item__cal{
+    font-size: .8rem;
+    font-weight: bold;
+    
+}
+
+.grid__item__desc{
+    font-weight: 300;
+    margin-top: 1rem;
+
+}
+
+.hero--menu-2{
+    background-image: url('../img/salad.jpg');
+}
+
+.section__menu__area_header{
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+    
 }
