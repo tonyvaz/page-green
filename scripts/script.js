@@ -6,6 +6,9 @@ const modalContent = document.querySelector('.modal__area');
     modalContent.style.transform = `translateY(0%)`;
     sessionStorage.setItem("modalOpen", true);
  }
+ else if(sessionStorage.getItem("modalOpen") === "false"){
+    modal.style.filter = `blur(0px)`;
+ }
 
 
 const closeModal = () => {
