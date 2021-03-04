@@ -14,6 +14,7 @@ const modalContent = document.querySelector('.modal__area');
 const closeModal = () => {
     modal.style.filter = `blur(0px)`;
     modalContent.classList.add('disapear');
+    modalContent.style.transform = `translateY(-200%)`;
     setTimeout(function(){modalContent.classList.add('hidden');},1000)
     sessionStorage.setItem("modalOpen", false);
 }
